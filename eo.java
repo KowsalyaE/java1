@@ -5,13 +5,17 @@ public static void main(String args[])
 {
 Scanner s=new Scanner(System.in);
 int n=s.nextInt();
-if(n%2==0)
+if(n>0)
 {
-System.out.println("even");
+System.out.println("positive");
 }
-if(n%2!=0)
+else if(n<0)
 {
-System.out.println("odd");
+System.out.println("negative");
+}
+else if(n==0)
+{
+System.out.println("zero");
 }
 }
 }
